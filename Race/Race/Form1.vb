@@ -1,7 +1,7 @@
 ﻿Public Class Form1
-    Dim slowbox1 As Boolean
-    Dim fastbox2 As Boolean
-    Dim bitslowbox3 As Boolean
+    Dim change1 As Boolean
+    Dim change2 As Boolean
+    Dim change3 As Boolean
     Private Sub Form1_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
         If e.KeyCode = Keys.Up Then
             lblSquare.Top = lblSquare.Top - 5
@@ -33,15 +33,15 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles tmr1.Tick
         Dim moveright As Boolean
 
-        If moveright = True Then
-            lbl1.Left = lbl1.Left + 10
-            lbl2.Left = lbl2.Left + 10
-            lbl3.Left = lbl3.Left + 10
-        Else
-            lbl1.Left = lbl1.Left - 10
-            lbl2.Left = lbl2.Left - 10
-            lbl3.Left = lbl3.Left - 10
-        End If
+        'If moveright = True Then
+        '    lbl1.Left = lbl1.Left + 10
+        '    lbl2.Left = lbl2.Left + 10
+        '    lbl3.Left = lbl3.Left + 10
+        'Else
+        '    lbl1.Left = lbl1.Left - 10
+        '    lbl2.Left = lbl2.Left - 10
+        '    lbl3.Left = lbl3.Left - 10
+        'End If
 
 
 
@@ -52,7 +52,21 @@
     End Sub
 
     Private Sub tmr2_Tick(sender As Object, e As EventArgs) Handles tmr2.Tick
-        If lbl2.Bounds Then
+        If change2 = False Then
+            lbl2.Left = lbl2.Left + 10
+        End If
+
+        If lbl2.Bounds.IntersectsWith(lblRightBump.Bounds) Then
+            change2 = True
+        End If
+
+        If change2 = True Then
+            lbl2.Left = lbl2.Left - 10
+        End If
+
+        If lbl2.Bounds.IntersectsWith(lblLeftBump.Bounds) Then
+            lbl2.Left = lbl2.Left + 10
+        End If
     End Sub
 
     Private Sub tmr3_Tick(sender As Object, e As EventArgs) Handles tmr3.Tick
