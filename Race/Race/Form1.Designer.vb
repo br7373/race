@@ -22,9 +22,10 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.components = New System.ComponentModel.Container()
+        Me.lblRightBump = New System.Windows.Forms.Label()
+        Me.lblLeftBump = New System.Windows.Forms.Label()
+        Me.lblBottom = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -40,41 +41,44 @@ Partial Class Form1
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
+        Me.lbl3 = New System.Windows.Forms.Label()
+        Me.lbl2 = New System.Windows.Forms.Label()
+        Me.lbl1 = New System.Windows.Forms.Label()
         Me.lblSquare = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.tmr1 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmr2 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmr3 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblRightBump
         '
-        Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(515, -10)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 535)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.lblRightBump.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblRightBump.Location = New System.Drawing.Point(515, -10)
+        Me.lblRightBump.Name = "lblRightBump"
+        Me.lblRightBump.Size = New System.Drawing.Size(90, 535)
+        Me.lblRightBump.TabIndex = 0
+        Me.lblRightBump.Text = "Label1"
         '
-        'Label2
+        'lblLeftBump
         '
-        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.Location = New System.Drawing.Point(-19, -10)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(90, 535)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Label2"
+        Me.lblLeftBump.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblLeftBump.Location = New System.Drawing.Point(-19, -10)
+        Me.lblLeftBump.Name = "lblLeftBump"
+        Me.lblLeftBump.Size = New System.Drawing.Size(90, 535)
+        Me.lblLeftBump.TabIndex = 1
+        Me.lblLeftBump.Text = "Label2"
         '
-        'Label3
+        'lblBottom
         '
-        Me.Label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label3.Location = New System.Drawing.Point(39, 455)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(504, 70)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Label3"
+        Me.lblBottom.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblBottom.Location = New System.Drawing.Point(39, 455)
+        Me.lblBottom.Name = "lblBottom"
+        Me.lblBottom.Size = New System.Drawing.Size(504, 70)
+        Me.lblBottom.TabIndex = 2
+        Me.lblBottom.Text = "Label3"
         '
         'Label4
         '
@@ -218,40 +222,40 @@ Partial Class Form1
         Me.Label18.TabIndex = 17
         Me.Label18.Text = "Finish Line"
         '
-        'Label19
+        'lbl3
         '
-        Me.Label19.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label19.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label19.Location = New System.Drawing.Point(274, 105)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(44, 38)
-        Me.Label19.TabIndex = 18
-        Me.Label19.Text = "Label19"
+        Me.lbl3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lbl3.Location = New System.Drawing.Point(274, 105)
+        Me.lbl3.Name = "lbl3"
+        Me.lbl3.Size = New System.Drawing.Size(44, 38)
+        Me.lbl3.TabIndex = 18
+        Me.lbl3.Text = "Label19"
         '
-        'Label20
+        'lbl2
         '
-        Me.Label20.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label20.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label20.Location = New System.Drawing.Point(274, 217)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(44, 38)
-        Me.Label20.TabIndex = 19
-        Me.Label20.Text = "Label20"
+        Me.lbl2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lbl2.Location = New System.Drawing.Point(274, 217)
+        Me.lbl2.Name = "lbl2"
+        Me.lbl2.Size = New System.Drawing.Size(44, 38)
+        Me.lbl2.TabIndex = 19
+        Me.lbl2.Text = "Label20"
         '
-        'Label21
+        'lbl1
         '
-        Me.Label21.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label21.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label21.Location = New System.Drawing.Point(274, 326)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(44, 38)
-        Me.Label21.TabIndex = 20
-        Me.Label21.Text = "Label21"
+        Me.lbl1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lbl1.Location = New System.Drawing.Point(274, 326)
+        Me.lbl1.Name = "lbl1"
+        Me.lbl1.Size = New System.Drawing.Size(44, 38)
+        Me.lbl1.TabIndex = 20
+        Me.lbl1.Text = "Label21"
         '
         'lblSquare
         '
         Me.lblSquare.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.lblSquare.Location = New System.Drawing.Point(289, 409)
+        Me.lblSquare.Location = New System.Drawing.Point(280, 409)
         Me.lblSquare.Name = "lblSquare"
         Me.lblSquare.Size = New System.Drawing.Size(29, 30)
         Me.lblSquare.TabIndex = 21
@@ -282,11 +286,26 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.Label14)
-        Me.GroupBox1.Location = New System.Drawing.Point(135, -10)
+        Me.GroupBox1.Location = New System.Drawing.Point(134, -10)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(302, 89)
+        Me.GroupBox1.Size = New System.Drawing.Size(302, 85)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
+        '
+        'tmr1
+        '
+        Me.tmr1.Enabled = True
+        Me.tmr1.Interval = 1000
+        '
+        'tmr2
+        '
+        Me.tmr2.Enabled = True
+        Me.tmr2.Interval = 500
+        '
+        'tmr3
+        '
+        Me.tmr3.Enabled = True
+        Me.tmr3.Interval = 250
         '
         'Form1
         '
@@ -296,12 +315,12 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.lblSquare)
-        Me.Controls.Add(Me.Label21)
-        Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lbl1)
+        Me.Controls.Add(Me.lbl2)
+        Me.Controls.Add(Me.lbl3)
+        Me.Controls.Add(Me.lblBottom)
+        Me.Controls.Add(Me.lblLeftBump)
+        Me.Controls.Add(Me.lblRightBump)
         Me.Name = "Form1"
         Me.Text = "Race"
         Me.GroupBox1.ResumeLayout(False)
@@ -311,9 +330,9 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblRightBump As Label
+    Friend WithEvents lblLeftBump As Label
+    Friend WithEvents lblBottom As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
@@ -329,10 +348,13 @@ Partial Class Form1
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label20 As Label
-    Friend WithEvents Label21 As Label
+    Friend WithEvents lbl3 As Label
+    Friend WithEvents lbl2 As Label
+    Friend WithEvents lbl1 As Label
     Friend WithEvents lblSquare As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents tmr1 As Timer
+    Friend WithEvents tmr2 As Timer
+    Friend WithEvents tmr3 As Timer
 End Class
