@@ -10,3 +10,15 @@ H:\Computer Science\Semseter 1 Test 5\Race\Race\obj\Debug\Race.vbproj.CoreCompil
 H:\Computer Science\Semseter 1 Test 5\Race\Race\obj\Debug\Race.exe
 H:\Computer Science\Semseter 1 Test 5\Race\Race\obj\Debug\Race.xml
 H:\Computer Science\Semseter 1 Test 5\Race\Race\obj\Debug\Race.pdb
+C:\Users\zcj\Desktop\race-master\Race\Race\bin\Debug\Race.exe.config
+C:\Users\zcj\Desktop\race-master\Race\Race\bin\Debug\Race.exe
+C:\Users\zcj\Desktop\race-master\Race\Race\bin\Debug\Race.pdb
+C:\Users\zcj\Desktop\race-master\Race\Race\bin\Debug\Race.xml
+C:\Users\zcj\Desktop\race-master\Race\Race\obj\Debug\Race.vbprojAssemblyReference.cache
+C:\Users\zcj\Desktop\race-master\Race\Race\obj\Debug\Race.Form1.resources
+C:\Users\zcj\Desktop\race-master\Race\Race\obj\Debug\Race.Resources.resources
+C:\Users\zcj\Desktop\race-master\Race\Race\obj\Debug\Race.vbproj.GenerateResource.cache
+C:\Users\zcj\Desktop\race-master\Race\Race\obj\Debug\Race.vbproj.CoreCompileInputs.cache
+C:\Users\zcj\Desktop\race-master\Race\Race\obj\Debug\Race.exe
+C:\Users\zcj\Desktop\race-master\Race\Race\obj\Debug\Race.xml
+C:\Users\zcj\Desktop\race-master\Race\Race\obj\Debug\Race.pdb

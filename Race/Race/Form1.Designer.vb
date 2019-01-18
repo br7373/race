@@ -23,8 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.lblRightBump = New System.Windows.Forms.Label()
-        Me.lblLeftBump = New System.Windows.Forms.Label()
+        Me.lblRight = New System.Windows.Forms.Label()
+        Me.lblLeft = New System.Windows.Forms.Label()
         Me.lblBottom = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -53,23 +53,23 @@ Partial Class Form1
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'lblRightBump
+        'lblRight
         '
-        Me.lblRightBump.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lblRightBump.Location = New System.Drawing.Point(515, -10)
-        Me.lblRightBump.Name = "lblRightBump"
-        Me.lblRightBump.Size = New System.Drawing.Size(90, 535)
-        Me.lblRightBump.TabIndex = 0
-        Me.lblRightBump.Text = "Label1"
+        Me.lblRight.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblRight.Location = New System.Drawing.Point(515, -10)
+        Me.lblRight.Name = "lblRight"
+        Me.lblRight.Size = New System.Drawing.Size(90, 535)
+        Me.lblRight.TabIndex = 0
+        Me.lblRight.Text = "Label1"
         '
-        'lblLeftBump
+        'lblLeft
         '
-        Me.lblLeftBump.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lblLeftBump.Location = New System.Drawing.Point(-19, -10)
-        Me.lblLeftBump.Name = "lblLeftBump"
-        Me.lblLeftBump.Size = New System.Drawing.Size(90, 535)
-        Me.lblLeftBump.TabIndex = 1
-        Me.lblLeftBump.Text = "Label2"
+        Me.lblLeft.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblLeft.Location = New System.Drawing.Point(-19, -10)
+        Me.lblLeft.Name = "lblLeft"
+        Me.lblLeft.Size = New System.Drawing.Size(90, 535)
+        Me.lblLeft.TabIndex = 1
+        Me.lblLeft.Text = "Label2"
         '
         'lblBottom
         '
@@ -295,17 +295,16 @@ Partial Class Form1
         'tmr1
         '
         Me.tmr1.Enabled = True
-        Me.tmr1.Interval = 1000
+        Me.tmr1.Interval = 250
         '
         'tmr2
         '
         Me.tmr2.Enabled = True
-        Me.tmr2.Interval = 500
+        Me.tmr2.Interval = 50
         '
         'tmr3
         '
         Me.tmr3.Enabled = True
-        Me.tmr3.Interval = 250
         '
         'Form1
         '
@@ -319,8 +318,8 @@ Partial Class Form1
         Me.Controls.Add(Me.lbl2)
         Me.Controls.Add(Me.lbl3)
         Me.Controls.Add(Me.lblBottom)
-        Me.Controls.Add(Me.lblLeftBump)
-        Me.Controls.Add(Me.lblRightBump)
+        Me.Controls.Add(Me.lblLeft)
+        Me.Controls.Add(Me.lblRight)
         Me.Name = "Form1"
         Me.Text = "Race"
         Me.GroupBox1.ResumeLayout(False)
@@ -330,8 +329,8 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents lblRightBump As Label
-    Friend WithEvents lblLeftBump As Label
+    Friend WithEvents lblRight As Label
+    Friend WithEvents lblLeft As Label
     Friend WithEvents lblBottom As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
